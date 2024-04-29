@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<center>
+		<form class="form-group"><br>
+			<input id="input1" type="number" class="form-control bg-dark" placeholder="Enter here">
+			<label id="num1">Enter the first number</label><br>
+			<input id="input2" type="number" class="form-control bg-dark" placeholder="Enter here">
+			<label id="num2">Enter the second number</label><br><br>
+			<button id="button1" class="btn" onclick="add()">Add num1 and num2</button>
+			<button id="button2" class="btn" onclick="product()">Product of num1 and num2</button>
+			<button id="button3" class="btn" onclick="compare()">Is of num1 equal to num2</button>
+			<button id="button4" class="btn" onclick="subtract()">subtract num1 and num2</button>
+		</form>
+	</center>
+		<script type="text/javascript">
+			function add() {
+				var num1 = document.getElementById("input1").value; //value for num1
+				var num2 = document.getElementById("input2").value; //value for num2
+				var sum = Number(num1) + Number(num2); //formula (sum)
+
+				window.alert("The sum of num1 and num2 : " + sum);
+			}
+			function product() {
+				var num1 = document.getElementById("input1").value; //value for num1
+				var num2 = document.getElementById("input2").value; //value for num2
+				var product = Number(num1) * Number(num2); //formula (product)
+
+				window.alert("The product of num1 and num2 : " + product);
+			}
+			function compare() {
+				var num1 = document.getElementById("input1").value; //value for num1
+				var num2 = document.getElementById("input2").value; //value for num2
+				var compare = Number(num1) == Number(num2); //compare num1 and num2
+
+				window.alert("Is num1 equal to num2 : " + compare);
+			}
+			function subtract() {
+				var num1 = document.getElementById("input1").value; //value for num1
+				var num2 = document.getElementById("input2").value; //value for num2
+				var subtract = Number(num1) - Number(num2); //divide num1 with num2
+
+				window.alert("subtract num1 and num2 : " + subtract);
+			}
+		</script>
+</body>
+</html>
